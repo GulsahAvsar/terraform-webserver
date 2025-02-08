@@ -24,3 +24,18 @@ provider "azurerm" {
 provider "cloudinit" {
   # Configuration options
 }
+
+variable "labelPrefix" {
+  description = "Prefix for naming Azure resources"
+}
+
+variable "region" {
+  description = "The Azure region to deploy resources"
+  default     = "canadacentral"
+}
+
+variable "admin_username" {
+  description = "The admin username for the virtual machine"
+  default     = "azureadmin"
+}
+
